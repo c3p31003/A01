@@ -46,6 +46,23 @@ img {
     margin: 30px 30px 30px 0;
 }
 
+.header_title {
+    width: 240px;
+}
+
+header {
+    background-color: #76B5AE;
+    height: 80px;
+    margin-bottom: 30px;
+    padding:  0 3%;
+}
+
+header h1{
+    font-size: 28px;
+    line-height: 80px;
+}
+
+
 /* ログイン部分 */
 .contact_box {
     text-align: center;
@@ -54,12 +71,29 @@ img {
 .contact_box p {
     background-color: #dfeeea;
     width: 40%;
-    margin: 0 auto;
+    padding: 16px;
+    border-radius: 16px;
+    margin: 0 auto 60px auto;
     text-align: left;
+    white-space: nowrap
+}
+
+.contact_box input {
+    width: 96%;
+    padding: 0 10px 4px 10px;;
+}
+
+.contact_box img {
+    width: 14%;
+    margin: 40px 0 100px 0;
 }
 
 .button_LogIn {
     background-color: #50B4AA;
+    padding: 16px;
+    border-radius: 16px;
+    width: 200px;
+
 }
 
 /* トップページ部分 */
@@ -189,8 +223,70 @@ img {
     padding:  0 0 15px 0;
 }
 
+/* 書類一覧ページ部分 */
+.AllDocuments_search_section {
+    width: 70%;
+    margin-bottom: 90px;
+}
+
+.AllDocuments_search_section h1{
+    width:100%;
+}
+
+.AllDocuments_search_year {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    width: 250px;
+}
+
+#year {
+    width: 300px;
+    cursor: pointer;
+}
+
+.AllDocuments_search_section label {
+    cursor: default;
+    width: 100%;
+}
+
+.AllDocuments_search_year select,.AllDocuments_search_section input{
+    padding: 10px;
+    font-size: 16px;
+    border: solid 1px #D9D9D9;
+    border-radius: 6px;
+    appearance: none;
+    background-color: #fff;
+}
+
+.AllDocuments_search_year::after { /* 「∨」を右端に表示 */
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    background-image: url('../img/∨.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+.AllDocuments_search_area {
+    margin-left: 20px;
+}
+
+.AllDocuments_search_button {
+    margin-left: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
 /* タブレット: 1024px〜 */
 @media screen and (max-width: 1024px) {
+    /* トップページ */
     #PC {
         display: none; /* PCの時は非表示 */
     }

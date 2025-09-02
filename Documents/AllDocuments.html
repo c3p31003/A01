@@ -9,26 +9,34 @@
     </head>
     <body>
         <header>
-
+            <div class="header_title"><a href="../index.html"><h1>遊具管理システム</h1></a></div>
+            <div class="alert"></div>
+            <div class="openbtn"><span></span><span></span><span></span></div>
         </header>
         <div class="wrapper">
-            <div class="flexbox">
-                <div class="section">
-                    <div class="AllDocuments_search_section">
-                        <h1>書類一覧</h1>
-                        <h2>検索</h2>
-                        <label for="colors">点検年度</label>
-                        <select id="colors" name="colors">
-                            <option value="all" selected>すべて</option>
-                            <option value="7">令和７年度</option>
-                            <option value="6">令和６年度</option>
-                            <option value="5">令和５年度</option>
-                        </select>
-                        <label for="colors">公園名</label>
-                        <input type="search" name="search" placeholder="キーワードを入力">
-                        <label for="colors">作成者名</label>
-                        <input type="search" name="search" placeholder="キーワードを入力">
-                        <input type="submit" name="submit" value="検索">
+            <div class="section">
+                <h1>書類一覧</h1>
+                <div class="AllDocuments_search_section">
+                    <h2>検索</h2>
+                    <div class="flexbox">
+                        <div class="AllDocuments_search_year">
+                            <label for="year">点検年度</label>
+                            <select id="year" name="year">
+                                <option value="all" selected>すべて</option>
+                                <option value="7">令和７年度</option>
+                                <option value="6">令和６年度</option>
+                                <option value="5">令和５年度</option>
+                            </select>
+                        </div>
+                        <div class="AllDocuments_search_area">
+                            <label for="park">公園名</label>
+                            <input type="search" name="search" placeholder="公園名を入力">
+                        </div>
+                        <div class="AllDocuments_search_area">
+                            <label for="author">作成者名</label>
+                            <input type="search" name="search" placeholder="作成者名を入力">
+                        </div>
+                        <input type="submit" name="submit" value="検索" class="AllDocuments_search_button">
                     </div>
                 </div>
             </div>
@@ -43,7 +51,7 @@
                     <tr>
                         <td>令和✕年度〇〇公園結果報告書</td>
                         <td>△△△△</td>
-                        <td>✕✕年✕月✕日<button class="AllDocuments_list_EditButton">a</button><button class="AllDocuments_list_EditButton">a</button></td>
+                        <td>✕✕年✕月✕日<button class="AllDocuments_list_EditButton">編集</button><button class="AllDocuments_list_EditButton">削除</button></td>
                     </tr>
                 </table>
             </div>
@@ -58,7 +66,7 @@
                     <tr>
                         <td>令和✕年度〇〇公園結果報告書</td>
                         <td>△△△△</td>
-                        <td>✕✕年✕月✕日<button class="AllDocuments_list_EditButton">a</button><button class="AllDocuments_list_EditButton">a</button></td>
+                        <td>✕✕年✕月✕日<button class="AllDocuments_list_EditButton">編集</button><button class="AllDocuments_list_EditButton">削除</button></td>
                     </tr>
                 </table>
             </div>
@@ -73,7 +81,7 @@
                     <tr>
                         <td>令和✕年度〇〇公園結果報告書</td>
                         <td>△△△△</td>
-                        <td>✕✕年✕月✕日<button class="AllDocuments_list_EditButton">a</button><button class="AllDocuments_list_EditButton">a</button></td>
+                        <td>✕✕年✕月✕日<button class="AllDocuments_list_EditButton">編集</button><button class="AllDocuments_list_EditButton">削除</button></td>
                     </tr>
                 </table>
             </div>
